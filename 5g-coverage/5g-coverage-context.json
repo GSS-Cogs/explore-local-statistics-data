@@ -1,0 +1,149 @@
+{
+    "@context": "https://github.com/ONSdigital/application-profile/blob/draft/ons_context_v0.1.json",
+    "@id": "https://ons.gov.uk/datasets/5g-coverage/editions/2024-Q2/versions/2",
+    "@type": "ons:Version",
+    "title": "5G Coverage",
+    "dcat:distribution": [
+        {
+            "@id": "https://github.com/GSS-Cogs/family-ess/blob/main/5g-coverage/5g-coverage.csv",
+            "title": "5G Coverage",
+            "download_url": "https://github.com/GSS-Cogs/family-ess/blob/main/5g-coverage/5g-coverage.csv",
+            "media_type": "text/csv"
+        },
+        {
+            "@id": "https://onsdigital.github.io/explore-local-statistics-data/out/5g-coverage/5g-coverage/5g-coverage.csv",
+            "title": "5G Coverage",
+            "download_url": "https://onsdigital.github.io/explore-local-statistics-data/out/5g-coverage/5g-coverage/5g-coverage.csv",
+            "media_type": "application/csvm+json",
+            "described_by": "https://onsdigital.github.io/explore-local-statistics-data/out/5g-coverage/5g-coverage/5g-coverage.csv-metadata.json"
+        }
+    ],
+    "@reverse": {
+        "dcat:hasVersion": {
+            "@id": "https://ons.gov.uk/datasets/5g-coverage/editions/2024-Q2",
+            "@type": "ons:Edition",
+            "title": "5G Coverage",
+            "abstract": "Percentage of geographic areas with 5G signal outdoors from at least 1 operator (signal threshold: 105dBm), UK, as of January 2024.",
+            "description": "This dataset shows the percentage of geographic areas with 5G signal outdoors from at least 1 operator (signal threshold: 110dBm), in the UK, as of January 2024.\n\n### Coverage \n\nUK\n\n#### Geography definition\n\nLocal Authority Districts and Unitary Authorities,\nCounties,\nCombined Authorities\n\n### Source\n\n - United Kingdom: [Ofcom](https://www.ofcom.org.uk/research-and-data/multi-sector-research/infrastructure-research/connected-nations-update-spring-2024) \n\n\n",
+            "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+            "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "creator": "https://www.gov.uk/government/organisations/ofcom",
+            "issued": "2024-06-13T13:14",
+            "modified": "2024-09-20T12:00",
+            "wrds:caveat": "",
+            "keyword": [
+                "broadband-mobile-coverage",
+                "connectivity",
+                "local-authority",
+                "subnational"
+            ],
+            "theme": "https://www.ons.gov.uk/businessindustryandtrade/itandinternetindustry",
+            "spatial_coverage": "K02000001",
+            "spatial_resolution": [
+                "E06",
+                "E07",
+                "E08",
+                "E09",
+                "E10",
+                "E12",
+                "E47",
+                "N09",
+                "S12",
+                "W06"
+            ],
+            "temporal_coverage": {
+                "@type": "dcterms:PeriodOfTime",
+                "start": "2024-01-01T00:00:00+00:00",
+                "end": "2024-01-31T00:00:00+00:00"
+            },
+            "temporal_resolution": [
+                "P1M"
+            ],
+            "quality": "https://osr.statisticsauthority.gov.uk/policies/official-statistics-policies/official-statistics-in-development/",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "areacd",
+                        "titles": "area_code",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "areanm",
+                        "titles": "area_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "geography",
+                        "titles": "geography",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "variable_name",
+                        "titles": "variable_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "indicator",
+                        "titles": "indicator",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "mission",
+                        "titles": "mission",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "category",
+                        "titles": "category",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "period",
+                        "titles": "period",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "observation",
+                        "titles": "observation",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "measure",
+                        "titles": "measure",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "unit",
+                        "titles": "unit",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "lower_confidence_interval_95",
+                        "titles": "lower_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "upper_confidence_interval_95",
+                        "titles": "upper_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "observation_status",
+                        "titles": "observation_status",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "polarity",
+                        "titles": "polarity",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "notes",
+                        "titles": "notes",
+                        "datatype": "string"
+                    }
+                ]
+            }
+        }
+    }
+}

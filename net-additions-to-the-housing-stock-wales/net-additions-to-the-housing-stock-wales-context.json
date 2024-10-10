@@ -1,0 +1,146 @@
+{
+    "@context": "https://github.com/ONSdigital/application-profile/blob/draft/ons_context_v0.1.json",
+    "@id": "https://ons.gov.uk/datasets/net-additions-to-the-housing-stock-wales/editions/2024-Q2/versions/2",
+    "@type": "ons:Version",
+    "title": "Net additions to the housing stock (Wales)",
+    "dcat:distribution": [
+        {
+            "@id": "https://github.com/ONSdigital/explore-local-statistics-data/blob/main/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales.csv",
+            "title": "Net additions to the housing stock (Wales)",
+            "download_url": "https://github.com/ONSdigital/explore-local-statistics-data/blob/main/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales.csv",
+            "media_type": "text/csv"
+        },
+        {
+            "@id": "https://onsdigital.github.io/explore-local-statistics-data/out/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales.csv",
+            "title": "Net additions to the housing stock (Wales)",
+            "download_url": "https://onsdigital.github.io/explore-local-statistics-data/out/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales.csv",
+            "media_type": "application/csvm+json",
+            "described_by": "https://onsdigital.github.io/explore-local-statistics-data/out/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales/net-additions-to-the-housing-stock-wales.csv-metadata.json"
+        }
+    ],
+    "@reverse": {
+        "dcat:hasVersion": {
+            "@id": "https://ons.gov.uk/datasets/net-additions-to-the-housing-stock-wales/editions/2024-Q2",
+            "@type": "ons:Edition",
+            "title": "Net additions to the housing stock (Wales)",
+            "abstract": "Net additions to the dwelling stock (including new builds, conversions, changes of use, other gains/losses and offset by demolitions) per 1,000 stock, Wales, financial years 2001/02 to 2021/22.",
+            "description": "This dataset shows the net additions to the dwelling stock (including new builds, conversions, changes of use, other gains/losses and offset by demolitions) per 1,000 stock, in Wales, for financial years 2001/02 to 2021/22.\n\n### Coverage \n\nWales\n\n#### Geography definition\n\nLocal Authority Districts, \nNation (Wales) \n\n### Source\n\n - Wales: [Welsh Government](https://statswales.gov.wales/Catalogue/Housing/Dwelling-Stock-Estimates/dwellingstockestimates-by-localauthority-tenure) \n\n\n### Source Notes and Caveats \nIn Wales, the approach to housing stock is very similar to that in England, using the Census and adding a measure of net supply for each intervening year. However, there may be a small negative bias in the net supply estimate for Wales compared to the rest of the UK since they do not include new builds certified by Approved Inspectors and they have no way of incorporating gains or losses due to Change of Use. \n\n\n",
+            "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+            "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "creator": "https://www.gov.uk/government/organisations/welsh-government",
+            "issued": "2024-05-30T15:03",
+            "modified": "2024-05-31T11:10",
+            "wrds:caveat": "",
+            "keyword": [
+                "new-building",
+                "conversion",
+                "demolition",
+                "dwelling",
+                "subnational",
+                "local-authority",
+                "wales"
+            ],
+            "theme": "https://www.ons.gov.uk/peoplepopulationandcommunity/housing",
+            "spatial_coverage": [
+                "W92000004"
+            ],
+            "spatial_resolution": [
+                "W06",
+                "W15"
+            ],
+            "temporal_coverage": {
+                "@type": "dcterms:PeriodOfTime",
+                "start": "2001-04-01T00:00:00+00:00",
+                "end": "2022-03-31T00:00:00+00:00"
+            },
+            "temporal_resolution": [
+                "P1Y"
+            ],
+            "quality": "https://osr.statisticsauthority.gov.uk/policies/official-statistics-policies/official-statistics-in-development/",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "areacd",
+                        "titles": "area_code",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "areanm",
+                        "titles": "area_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "geography",
+                        "titles": "geography",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "variable_name",
+                        "titles": "variable_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "indicator",
+                        "titles": "indicator",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "mission",
+                        "titles": "mission",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "category",
+                        "titles": "category",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "period",
+                        "titles": "period",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "observation",
+                        "titles": "observation",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "measure",
+                        "titles": "measure",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "unit",
+                        "titles": "unit",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "lower_confidence_interval_95",
+                        "titles": "lower_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "upper_confidence_interval_95",
+                        "titles": "upper_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "observation_status",
+                        "titles": "observation_status",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "polarity",
+                        "titles": "polarity",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "notes",
+                        "titles": "notes",
+                        "datatype": "string"
+                    }
+                ]
+            }
+        }
+    }
+}

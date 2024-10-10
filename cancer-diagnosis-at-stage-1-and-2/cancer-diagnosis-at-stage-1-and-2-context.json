@@ -1,0 +1,148 @@
+{
+    "@context": "https://github.com/ONSdigital/application-profile/blob/draft/ons_context_v0.1.json",
+    "@id": "https://ons.gov.uk/datasets/cancer-diagnosis-at-stage-1-and-2/editions/2023-Q2/versions/2",
+    "@type": "ons:Version",
+    "title": "Cancer diagnosis at stage 1 and 2",
+    "dcat:distribution": [
+        {
+            "@id": "https://github.com/ONSdigital/explore-local-statistics-data/blob/main/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2.csv",
+            "title": "Cancer diagnosis at stage 1 and 2",
+            "download_url": "https://github.com/ONSdigital/explore-local-statistics-data/blob/main/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2.csv",
+            "media_type": "text/csv"
+        },
+        {
+            "@id": "https://onsdigital.github.io/explore-local-statistics-data/out/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2.csv",
+            "title": "Cancer diagnosis at stage 1 and 2",
+            "download_url": "https://onsdigital.github.io/explore-local-statistics-data/out/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2.csv",
+            "media_type": "application/csvm+json",
+            "described_by": "https://onsdigital.github.io/explore-local-statistics-data/out/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2/cancer-diagnosis-at-stage-1-and-2.csv-metadata.json"
+        }
+    ],
+    "@reverse": {
+        "dcat:hasVersion": {
+            "@id": "https://ons.gov.uk/datasets/cancer-diagnosis-at-stage-1-and-2/editions/2023-Q2",
+            "@type": "ons:Edition",
+            "title": "Cancer diagnosis at stage 1 and 2",
+            "abstract": "New cases of cancer diagnosed at stages 1 and 2 as a percentage of all new cases of cancer diagnosed at any known stage, England, 2013 to 2021.",
+            "description": "This dataset shows new cases of cancer diagnosed at stages 1 and 2 as a percentage of all new cases of cancer diagnosed at any known stage, in England, for 2013 to 2021.\n\n### Coverage \n\nEngland\n\n#### Geography definition\n\nLocal Authority Districts and Unitary Authorities,\nCounties,\nRegions,\nCombined Authorities,\nNation (England) \n\n### Source\n\n - England: [Office for Health Improvement and Disparities](https://fingertips.phe.org.uk/profile/public-health-outcomes-framework/data#page/4/gid/1000042/pat/15/par/E92000001/ati/6/are/E12000004/iid/93671/age/1/sex/4/cat/-1/ctp/-1/yrr/1/cid/4/tbm/1/page-options/car-ao-0_car-do-0_tre-ao-1) \n\n\n### Source Notes and Caveats \n- Due to the impact of the COVID-19 pandemic on both clinical and data quality arrangements, the ability to obtain stage data for cancer registrations was reduced for the 2019 and 2020 diagnosis years. In 2019, the proportion of stageable cancer diagnoses with a registered stage fell from 85% in 2018 to 76%. For the 2020 diagnosis year, stage completeness increased to 81%.\n- Values for Cornwall and Isles of Scilly are in a combined code (E67000002).  \n\n\n",
+            "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+            "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "creator": "https://www.gov.uk/government/organisations/office-for-health-improvement-and-disparities",
+            "issued": "2023-05-17T12:25:53.759812",
+            "modified": "2024-02-12T16:11",
+            "wrds:caveat": "",
+            "keyword": [
+                "tumor",
+                "subnational",
+                "local-authority",
+                "county",
+                "region"
+            ],
+            "theme": "https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare",
+            "spatial_coverage": "E92000001",
+            "spatial_resolution": [
+                "E06",
+                "E07",
+                "E08",
+                "E09",
+                "E10",
+                "E12",
+                "E47",
+                "E67"
+            ],
+            "temporal_coverage": {
+                "@type": "dcterms:PeriodOfTime",
+                "start": "2013-01-01T00:00:00+00:00",
+                "end": "2021-12-31T00:00:00+00:00"
+            },
+            "temporal_resolution": [
+                "P1Y"
+            ],
+            "quality": "https://osr.statisticsauthority.gov.uk/policies/official-statistics-policies/official-statistics-in-development/",
+            "tableSchema": {
+                "columns": [
+                    {
+                        "name": "areacd",
+                        "titles": "area_code",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "areanm",
+                        "titles": "area_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "geography",
+                        "titles": "geography",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "variable_name",
+                        "titles": "variable_name",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "indicator",
+                        "titles": "indicator",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "mission",
+                        "titles": "mission",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "category",
+                        "titles": "category",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "period",
+                        "titles": "period",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "observation",
+                        "titles": "observation",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "measure",
+                        "titles": "measure",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "unit",
+                        "titles": "unit",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "lower_confidence_interval_95",
+                        "titles": "lower_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "upper_confidence_interval_95",
+                        "titles": "upper_confidence_interval_95",
+                        "datatype": "decimal"
+                    },
+                    {
+                        "name": "observation_status",
+                        "titles": "observation_status",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "polarity",
+                        "titles": "polarity",
+                        "datatype": "string"
+                    },
+                    {
+                        "name": "notes",
+                        "titles": "notes",
+                        "datatype": "string"
+                    }
+                ]
+            }
+        }
+    }
+}
